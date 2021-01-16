@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#advantages_of_javascript">Advantages of Javascript</a></li>
+          <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+          <li><a class="nav-link" href="#variables">Variables</a></li>
+          <li><a class="nav-link" href="#if...else_statement">If...Else Statement</a></li>
+          <li><a class="nav-link" href="#functions">Functions</a></li>
+          <li><a class="nav-link" href="#related_technologies">Related Technologies</a></li>
+          <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <h1>JS Documentation</h1>
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <article>
+          <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+          <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior, and all major web browsers have a dedicated JavaScript engine to execute it.</p>
+          </article>
+        </section>
+        <section class="main-section" id="advantages_of_javascript">
+          <header>Advantages of JavaScript</header>
+          <article>
+          <p>Here are some key Advantages of Javascript</p>
+          <ul>
+            <li>JavaScript is a client side language.</li>
+            <li>JavaScript is an easy language to learn.</li>
+            <li>JavaScript is comparatively fast for the end user.</li>
+            <li>Easy to debug and test.</li>
+            <li>JavaScript tends to be very fast because it is often run immediately within the client's browser.</li> 
+          </ul>
+          </article>
+        </section>
+        <section class="main-section" id="hello_world">
+          <header>Hello World</header>
+          <article>
+          <p>To get started with writing JavaScript, open the Scratchpad and write your
+            first "Hello world" JavaScript code:
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }
+              greetMe("World");
+            </code>
+       Select the code in the pad and hit Ctrl+R to watch it unfold in your
+            browser!</p>
+          </article>
+            </section>
+        <section class="main-section" id="variables">
+          <header>Variables</header>
+          <article>
+          <p>Variable names can be any word that isn’t a reserved word (such as var). They may not include spaces. Digits can also be part of variable names—catch22 is a valid name, for example—but the name must not start with a digit. A variable name cannot include punctuation, except for the characters $ and _. When a variable points at a value, that does not mean it is tied to that value forever. The = operator can be used at any time on existing variables to disconnect them from their current value and have them point to a new one.</p>
+           You can declare a variable in three ways:
+            <p>
+              With the keyword var. For example, <code>var x = 42.</code> This syntax
+              can be used to declare both local and global variables.
+            </p>
+            <p>
+              By simply assigning it a value. For example, <code>x = 42.</code> This
+              always declares a global variable. It generates a strict JavaScript
+              warning. You shouldn't use this variant.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="if...else_statement">
+          <header>if...else statement</header>
+          <article>
+          <p>Use the if statement to specify a block of JavaScript code to be executed if a condition is true. 
+            <code>if (condition) { <br>
+              <i>//  block of code to be executed if the condition is true </i><br>
+              }</code>
+          Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.</p>
+          <p>Use the else statement to specify a block of code to be executed if the condition is false.
+            <code>if (condition) {<br>
+              <i>//  block of code to be executed if the condition is true </i><br>
+      } else { <br>
+              <i> //  block of code to be executed if the condition is false </i><br>
+              }</code>
+            <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+           <code> if (condition1) { <br>
+             <i> //  block of code to be executed if condition1 is true</i><br>
+      } else if (condition2) { <br>
+        <i>//  block of code to be executed if the condition1 is false and condition2 is true</i><br>
+      } else { <br>
+             <i> //  block of code to be executed if the condition1 is false and condition2 is false</i>
+             }</code>
+            </article>
+        </section>
+        <section class="main-section" id="functions">
+          <header>Functions</header>
+          <article>
+          <p>A function is first-class; a function is considered to be an object. As such, a function may have properties and methods, such as .call() and .bind(). A nested function is a function defined within another function. It is created each time the outer function is invoked. In addition, each nested function forms a lexical closure: The lexical scope of the outer function (including any constant, local variable, or argument value) becomes part of the internal state of each inner function object, even after execution of the outer function concludes. JavaScript also supports anonymous functions.</p>
+          <p>
+              For example, the following code defines a simple function named square:
+            </p>
+            <code>function square(number) { return number * number; }</code>
+          </article>
+        </section>
+        <section class="main-section" id="related_technologies">
+          <header>Related Technologies</header>
+          <article>
+          <ul>
+            <li>Java</li>
+          <p>A common misconception is that JavaScript is similar or closely related to Java. The differences between the two languages are more prominent than their similarities. Java has static typing, while JavaScript's typing is dynamic. Java is loaded from compiled bytecode, while JavaScript is loaded as human-readable source code. Java's objects are class-based, while JavaScript's are prototype-based. Finally, Java did not support functional programming until Java 8, while JavaScript has done so from the beginning, being influenced by Scheme.</p>
+            <li>JSON</li>
+          <p>JSON, or JavaScript Object Notation, is a general-purpose data interchange format that is defined as a subset of JavaScript's object literal syntax.</p>
+            <li>WebAssembly</li>
+          <p>Since 2017, web browsers have supported WebAssembly, a binary format that enables a JavaScript engine to execute performance-critical portions of web page scripts close to native speed.[93] WebAssembly code runs in the same sandbox as regular JavaScript code. asm.js is a subset of JavaScript that served as the forerunner of WebAssembly.</p>  
+          </ul>
+          </article>
+        </section>
+        <section class="main-section" id="reference">
+          <header>Reference</header>
+          <article>
+          <p>
+            Documentation gotten from <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a>
+            </p>
+          </article>
+        </section>
+      </main>
+</body>
+</html>

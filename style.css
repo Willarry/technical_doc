@@ -1,0 +1,103 @@
+body{
+    background-color:#eeeeee;
+    padding:0;
+    margin:0;
+  }
+  #navbar{
+    top:0;
+    left:0;
+    border-right:solid;
+    height:100%;
+    position:fixed;
+  }
+  #navbar li{
+    list-style-type:none;  
+    margin: 10px 0px 20px 0px;
+    border-top:2px solid black;
+    line-height:40px;
+  }
+  #navbar li:hover{
+    background-color:#ffcc00;
+    transition:0.7s;
+  }
+  #navbar li a{
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+    padding:10px 30px;
+  }
+  #navbar .nav-link{
+    font-size:20px;
+  }
+  #navbar header{
+    background-color:#ffcc00;
+  }
+  header{
+    font-size:40px;
+  }
+  #main-doc{
+    left:300px;
+    position:absolute;
+    margin-left:2rem;
+    padding:3px;
+  }
+  #main-doc h1{
+    color:#ffcc00;
+  }
+  #main-doc article{
+    font-size:18px;
+    margin:.8em;
+  }
+  code{
+    display:block;
+    text-align:left;
+    background-color:whitesmoke;
+    padding:20px;
+    margin:15px;
+    word-break:normal;
+    color:#212930;
+    font-family:courier;
+  }
+  ul li{
+    list-style-type:none;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  ul li::before {
+    content: "\2021";
+    color: #ffcc00;
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+  }
+  #related_technologies li{
+    font-size:20px;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  
+    #navbar {
+      display:none;
+    }
+    #navbar{
+      border:none;
+    }
+    #main-doc{
+      top:35px;
+      width:100%;
+      margin-left:-290px;
+    }
+    #main-doc h1 {
+      background-color:#ffcc00;
+      font-weight:400;
+      text-align:center;
+      padding:20px;
+      color:black;
+      margin-top:-2rem;
+    }
+  }
+  
